@@ -1,4 +1,4 @@
-![Logo](https://imgur.com/LxiVYkf)
+![Logo](https://i.imgur.com/LxiVYkf.png)
 
 
 ## Main links
