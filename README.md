@@ -2,6 +2,15 @@
   <img src="https://i.imgur.com/4lsQrI7.png">
 </h1>
 
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
+
 ## Main links
 
  - [WSTG](https://github.com/OWASP/wstg/tree/master/document)
