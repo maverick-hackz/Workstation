@@ -20,6 +20,7 @@
   - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
  - [Chat GPT](https://chat.openai.com/)
  - [PortSwigger](https://portswigger.net/)
+  - [Bi.Zone BugBounty](https://app.bugbounty.bi.zone/)
 
 ## Download Burp
 
