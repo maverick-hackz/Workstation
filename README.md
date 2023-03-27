@@ -13,11 +13,11 @@
     <a href="https://www.vCloudInfo.com/tag/iot">
       Blog
     </a>
-    <span> | </span>
+    <span> • </span>
     <a href="https://github.com/CCOSTAN/Home-AssistantConfig#devices">
       Devices
     </a>
-    <span> | </span>
+    <span> • </span>
     <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
       Todo List
     </a>
