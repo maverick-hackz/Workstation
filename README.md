@@ -1,7 +1,6 @@
 <h1 align="center">
-  <img src="https://i.imgur.com/4lsQrI7.png"> </a>
+  <img src="https://i.imgur.com/4lsQrI7.png">
 </h1>
-
 ## Main links
 
  - [WSTG](https://github.com/OWASP/wstg/tree/master/document)
