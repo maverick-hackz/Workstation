@@ -85,13 +85,6 @@ where
 
 This can be used in combination with the ```Git Dumper``` in case the downloaded repository is incomplete.
 
-
-## Demo
-
-Here's a small demo of the **Dumper** tool:
-
-[![asciicast](https://asciinema.org/a/24072.png)](https://asciinema.org/a/24072)
-
 ## Proxy support
 
 The `urllib` and `curl` should support proxy configuration through environment variables:
