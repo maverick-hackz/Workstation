@@ -1,7 +1,7 @@
 Weevely
 =======
 
-[![Build Status](https://cdn-0.securityonline.info/wp-content/uploads/2016/11/1.png?ezimgfmt=rs:382x254/rscb1/ngcb1/notWebP)
+![Build Status](https://cdn-0.securityonline.info/wp-content/uploads/2016/11/1.png?ezimgfmt=rs:382x254/rscb1/ngcb1/notWebP)
 
 ## Name
 
