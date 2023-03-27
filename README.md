@@ -8,7 +8,45 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-
+<div align="center"><a name="menu"></a>
+  <h4>
+    <a href="https://www.vCloudInfo.com/tag/iot">
+      Blog
+    </a>
+    <span> | </span>
+    <a href="https://github.com/CCOSTAN/Home-AssistantConfig#devices">
+      Devices
+    </a>
+    <span> | </span>
+    <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
+      Todo List
+    </a>
+    <span> | </span>
+    <a href="https://twitter.com/BearStoneHA">
+      Smart Home Stats
+    </a>
+    <span> | </span>
+    <a href="https://www.vcloudinfo.com/click-here">
+      Follow Me
+    </a>
+    <span> | </span>
+    <a href="https://github.com/CCOSTAN/Home-AssistantConfig/tree/master/config">
+      Code
+    </a>
+    <span> | </span>
+    <a href="https://github.com/CCOSTAN/Home-AssistantConfig#diagram">
+      Diagram
+    </a>
+    <span> | </span>
+    <a href="https://youtube.com/vCloudInfo">
+      Youtube
+    </a>
+    <span> | </span>
+    <a href="https://amzn.to/2HXSx2M">
+      Merch
+    </a>
+  </h4>
+</div>
 
 ## Main links
 
