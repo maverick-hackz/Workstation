@@ -1,11 +1,6 @@
 <h1 align="center">
   <img src="https://i.imgur.com/4lsQrI7.png">
-    <br> Github page with most effective tools for testing web applications
-</h1>
-
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
-
-<p align="center">
+  <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#download">Download</a> •
@@ -13,6 +8,12 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
+    <br> Github page with most effective tools for testing web applications
+</h1>
+
+<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+
+
 
 ## Main links
 
