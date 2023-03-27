@@ -12,12 +12,9 @@
  - [Chat GPT](https://chat.openai.com/)
  - [PortSwigger](https://portswigger.net/)
 
-
-![Logo](https://media.giphy.com/media/DLm2IJPuLnMTS/giphy.gif)
-
-
 ## Download Burp
 
 
 [CLICK THIS LINK](https://github.com/matiassingers/awesome-readme)
 
+![Logo](https://media.giphy.com/media/DLm2IJPuLnMTS/giphy.gif)
