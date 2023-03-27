@@ -1,7 +1,6 @@
 <h1 align="center">
   <img src="https://i.imgur.com/4lsQrI7.png">
 <div align="center"><a name="menu"></a>
-  <h4>
     <a href="https://www.vCloudInfo.com/tag/iot">
       Web
     </a>
@@ -13,7 +12,6 @@
     <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
       Todo List
     </a>
-  </h4>
 </div>
 
 ## Main links
