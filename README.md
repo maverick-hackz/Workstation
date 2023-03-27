@@ -1,5 +1,10 @@
 <h1 align="center">
   <img src="https://i.imgur.com/4lsQrI7.png">
+  <h1 align="center">
+  <a name="logo" href="https://www.vCloudInfo.com/tag/iot"><img src="https://raw.githubusercontent.com/CCOSTAN/Home-AssistantConfig/master/config/www/custom_ui/floorplan/images/branding/twitter_profile.png" alt="Bear Stone Smart Home" width="200"></a>
+  <br>
+  Bear Stone Smart Home Documentation
+</h1>
 <div align="center"><a name="menu"></a>
     <a href="https://www.vCloudInfo.com/tag/iot">
       Web
