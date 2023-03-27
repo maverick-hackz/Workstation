@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="https://i.imgur.com/4lsQrI7.png">
-    <br> Bear Stone Smart Home Documentation
+    <br> Github page with most effective tools for testing web applications
 </h1>
 
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
