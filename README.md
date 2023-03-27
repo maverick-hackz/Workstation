@@ -21,7 +21,5 @@
 
 
 <h1 align="center">
-  <img src="https://media.giphy.com/media/DLm2IJPuLnMTS/giphy.gif" alt="Bear Stone Smart Home" width="200"></a>
-  <br>
-  Bear Stone Smart Home Documentation
+  <img src="https://media.giphy.com/media/DLm2IJPuLnMTS/giphy.gif" width="200"></a>
 </h1>
