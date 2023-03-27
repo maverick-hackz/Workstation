@@ -2,6 +2,9 @@
   <img src="https://i.imgur.com/4lsQrI7.png">
   <h1 align="center">
 </h1>
+  <br>
+  Bear Stone Smart Home Documentation
+</h1>
 <div align="center"><a name="menu"></a>
     <a href="https://www.vCloudInfo.com/tag/iot">
       Web
