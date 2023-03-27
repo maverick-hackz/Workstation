@@ -1,5 +1,6 @@
-![Logo](https://i.imgur.com/LxiVYkf.png)
-
+<h1 align="center">
+  <img src="https://i.imgur.com/LxiVYkf.png" width="200"></a>
+</h1>
 
 ## Main links
 
