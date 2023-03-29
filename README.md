@@ -8,12 +8,13 @@
  - [WSTG](https://github.com/OWASP/wstg/tree/master/document)
  - [Temp email](https://linux0.net/)
  - [Cyberchief](https://gchq.github.io/CyberChef/)
-  - [JWT.io](https://jwt.io/)
+ - [JWT.io](https://jwt.io/)
  - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
-  - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
+ - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
+ - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
  - [PortSwigger](https://portswigger.net/)
- - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
+
 
 ## Download Burp
 
