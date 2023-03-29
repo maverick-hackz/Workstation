@@ -13,6 +13,7 @@
   - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
  - [Chat GPT](https://chat.openai.com/)
  - [PortSwigger](https://portswigger.net/)
+ - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 
 ## Download Burp
 
