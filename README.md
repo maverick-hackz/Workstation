@@ -11,6 +11,7 @@
  - [JWT.io](https://jwt.io/)
  - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
  - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
+ - [SecLists](https://github.com/danielmiessler/SecLists)
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
  - [PortSwigger](https://portswigger.net/)
