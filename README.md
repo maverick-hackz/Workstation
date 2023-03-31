@@ -10,6 +10,7 @@
  - [Cyberchief](https://gchq.github.io/CyberChef/)
  - [JWT.io](https://jwt.io/)
  - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
+ - [Exploit DB](https://www.exploit-db.com/)
  - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
  - [SecLists](https://github.com/danielmiessler/SecLists)
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
