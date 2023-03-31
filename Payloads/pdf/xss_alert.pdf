@@ -12,7 +12,7 @@ endobj
   <</JS
   (
 try {
-  app.alert\("XSS-BY-Anurag-Verma"\)
+  app.alert\("XSS"\)
 } catch \(e\) {
   app.alert\(e.message\);
 }
