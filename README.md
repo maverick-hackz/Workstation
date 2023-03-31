@@ -14,6 +14,7 @@
  - [SecLists](https://github.com/danielmiessler/SecLists)
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
+ - [CVE archive](https://github.com/trickest/cve)
  - [PortSwigger](https://portswigger.net/)
 
 
