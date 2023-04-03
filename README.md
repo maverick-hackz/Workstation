@@ -26,7 +26,7 @@
 # Academies
   
   - [PortSwigger](https://portswigger.net/)
-  - [HackTheBox][(https://www.hackthebox.com/)
+  - [HackTheBox](https://www.hackthebox.com/)
   - [PortSwigger](https://portswigger.net/)
   
 ## Download Burp
