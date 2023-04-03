@@ -13,13 +13,13 @@
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
  - [CVE archive](https://github.com/trickest/cve)
- - [PortSwigger](https://portswigger.net/)
   
 ## Resourses for reading
   
- - [WSTG](https://github.com/OWASP/wstg/tree/master/document)
- - [WSTG RUS](https://github.com/andrettv/WSTG/tree/master/WSTG-ru)
+ - [OWASP WSTG ENG](https://github.com/OWASP/wstg/tree/master/document)
+ - [OWASP WSTG RUS](https://github.com/andrettv/WSTG/tree/master/WSTG-ru)
  - [OWASP ASVS RUS](https://github.com/andrettv/ASVS/tree/master/4.0/ru)
+ - [CodeBy forum](https://codeby.net/)
  - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
  - [Exploit DB](https://www.exploit-db.com/)
   
@@ -27,7 +27,8 @@
   
   - [PortSwigger](https://portswigger.net/)
   - [HackTheBox](https://www.hackthebox.com/)
-  - [PortSwigger](https://portswigger.net/)
+  - [Hacker101][(https://www.hacker101.com/)
+  - [Codeby Games](https://codeby.games/categories)
   
  
 ## Download Burp
