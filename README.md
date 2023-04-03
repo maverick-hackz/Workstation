@@ -22,7 +22,6 @@
  - [CodeBy Forum](https://codeby.net/)
  - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
  - [Exploit DB](https://www.exploit-db.com/)
- - [CyberSchool Yandex](https://www.youtube.com/playlist?list=PLQC2_0cDcSKD_JHWtEJGIFQUVh7Z5JM8E))
   
 # Academies
   
