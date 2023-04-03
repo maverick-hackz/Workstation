@@ -27,7 +27,7 @@
   
   - [PortSwigger](https://portswigger.net/)
   - [HackTheBox](https://www.hackthebox.com/)
-  - [Hacker101][(https://www.hacker101.com/)
+  - [Hacker101](https://www.hacker101.com/)
   - [Codeby Games](https://codeby.games/categories)
   
  
