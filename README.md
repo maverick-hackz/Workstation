@@ -8,7 +8,7 @@
  - [Temp email](https://linux0.net/)
  - [Cyberchief](https://gchq.github.io/CyberChef/)
  - [JWT.io](https://jwt.io/)
- - [Request bin][(https://requestbin.jumio.com/)
+ - [Request bin](https://requestbin.jumio.com/)
  - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
  - [SecLists](https://github.com/danielmiessler/SecLists)
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
