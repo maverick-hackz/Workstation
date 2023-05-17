@@ -8,11 +8,15 @@
  - [Temp email](https://linux0.net/)
  - [Cyberchief](https://gchq.github.io/CyberChef/)
  - [JWT.io](https://jwt.io/)
+ - [Request bin][(https://requestbin.jumio.com/)
  - [Revshellgenerator](https://tex2e.github.io/reverse-shell-generator/index.html)
  - [SecLists](https://github.com/danielmiessler/SecLists)
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
  - [CVE archive](https://github.com/trickest/cve)
+ - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
+ - [Exploit DB](https://www.exploit-db.com/)
+ - [Snyk DB](https://security.snyk.io/)
   
 ## Resourses for reading
   
@@ -20,9 +24,8 @@
  - [OWASP WSTG RUS](https://github.com/andrettv/WSTG/tree/master/WSTG-ru)
  - [OWASP ASVS RUS](https://github.com/andrettv/ASVS/tree/master/4.0/ru)
  - [CodeBy Forum](https://codeby.net/)
- - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
- - [Exploit DB](https://www.exploit-db.com/)
-  
+
+
 # Academies
   
   - [PortSwigger](https://portswigger.net/)
