@@ -14,7 +14,6 @@
  - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
  - [Chat GPT](https://chat.openai.com/)
  - [CVE archive](https://github.com/trickest/cve)
- - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
  - [Exploit DB](https://www.exploit-db.com/)
  - [Snyk DB](https://security.snyk.io/)
   
@@ -23,6 +22,7 @@
  - [OWASP WSTG ENG](https://github.com/OWASP/wstg/tree/master/document)
  - [OWASP WSTG RUS](https://github.com/andrettv/WSTG/tree/master/WSTG-ru)
  - [OWASP ASVS RUS](https://github.com/andrettv/ASVS/tree/master/4.0/ru)
+ - [HackTricks](https://book.hacktricks.xyz/welcome/readme)
  - [CodeBy Forum](https://codeby.net/)
 
 
