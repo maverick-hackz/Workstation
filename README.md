@@ -3,6 +3,9 @@
   <h1 align="center">
 </div>
 
+## About
+This workstation was created for cybersecurity specialists to search for various vulnerabilities in web applications. It contains various scripts, payloads and instructions on their use. The repository is regularly updated with new tools and links to new CTF platforms.
+
 ## Main links
 
  - [Temp email](https://linux0.net/)
