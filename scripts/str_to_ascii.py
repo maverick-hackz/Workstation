@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Hex encoder: emit a string as a sequence of \\xHH bytes.
+"""Interactive string-to-ASCII printer (similar to ascii_encode.py with verbose framing).
 
 Usage:
-    python3 hex_encode.py                 # interactive (type 'exit' to quit)
-    python3 hex_encode.py "hello world"   # one-shot, encode the argument
+    python3 str_to_ascii.py                 # interactive (type 'exit' to quit)
+    python3 str_to_ascii.py "hello world"   # one-shot, encode the argument
 
 Authorized testing only.
 """
@@ -12,7 +12,7 @@ import sys
 
 
 def encode(s: str) -> str:
-    return "".join("\\x" + format(ord(c), "02x") for c in s)
+    return ",".join(str(ord(c)) for c in s)
 
 
 def main() -> int:
@@ -21,15 +21,17 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.text is not None:
-        print(encode(args.text))
+        print("\nASCII text:")
+        print(encode(args.text), "\n")
         return 0
 
     try:
         while True:
-            s = input("Enter text: ")
+            s = input("Enter text:\n")
             if s.lower() == "exit":
                 return 0
-            print("HEX\t==>\t" + encode(s))
+            print("\nASCII text:")
+            print(encode(s), "\n")
     except (EOFError, KeyboardInterrupt):
         return 0
 

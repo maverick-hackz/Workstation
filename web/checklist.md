@@ -1,32 +1,32 @@
-# Fast Testing Checklist
+# Web Testing Checklist
 
-# Contents
-- [App Recon and analysis](#App-Recon-and-analysis)
+> Lightweight per-engagement web-app pentest checklist. Pair with the OWASP WSTG and the per-vuln cheatsheets in this directory. Authorized testing only.
+
+## Contents
+- [App recon and analysis](#app-recon-and-analysis)
 - [Test handling of access](#test-handling-of-access)
 - [Test handling of input](#test-handling-of-input)
 - [Test application logic](#test-application-logic)
 - [Assess application hosting](#assess-application-hosting)
 - [Miscellaneous tests](#miscellaneous-tests)
 
-# Task Checklist
-
-## App Recon and analysis
-
-- [ ] Map visible content (Manually)
-- [ ] Discover hidden & default content (Direcory/File Bruteforce)
+## App recon and analysis
+- [ ] Map visible content (manually)
+- [ ] Discover hidden & default content (directory/file brute force — see [../cheatsheets/ffuf.md](../cheatsheets/ffuf.md), [../cheatsheets/scan.md](../cheatsheets/scan.md))
 - [ ] Test for debug parameters
-- [ ] Identify data entry points (Discover Dynamic Content in Burp Pro)
-- [ ] Identify the technologies used (Wapplyzer or similiar)
-- [ ] Research existing vulnerabilitties in technology (Google ++)
-- [ ] Gather wordlists for specific techniology (Assetnote ones are excellent)
+- [ ] Identify data entry points (Burp Pro: Discover Dynamic Content)
+- [ ] Identify the technologies used (Wappalyzer or similar)
+- [ ] Research existing vulnerabilities in technology (CVE search, vendor advisories)
+- [ ] Gather wordlists for specific technology (Assetnote `wordlists.assetnote.io`)
 - [ ] Map the attack surface automatically (Spider)
-- [ ] Identify all javascript files for later analysis (in your proxy)
+- [ ] Identify all JavaScript files for later analysis (in your proxy)
 
 ## Test handling of access
-### - [ ] Authentication
-- [ ] Test password quality rules
+
+### Authentication
+- [ ] Test password quality rules (NIST 800-63B 5.1.1.2)
 - [ ] Test for username enumeration
-- [ ] Test resilience to password guessing
+- [ ] Test resilience to password guessing (see [../cheatsheets/hydra.md](../cheatsheets/hydra.md))
 - [ ] Test any account recovery function
 - [ ] Test any "remember me" function
 - [ ] Test any impersonation function
@@ -34,7 +34,8 @@
 - [ ] Check for unsafe distribution of credentials
 - [ ] Test for fail-open conditions
 - [ ] Test any multi-stage mechanisms
-### - [ ] Session handling
+
+### Session handling
 - [ ] Test tokens for meaning
 - [ ] Test tokens for predictability
 - [ ] Check for insecure transmission of tokens
@@ -44,33 +45,32 @@
 - [ ] Check for session fixation
 - [ ] Check for cross-site request forgery
 - [ ] Check cookie scope
-### - [ ] Access controls
+
+### Access controls
 - [ ] Understand the access control requirements
-- [ ] Test effectiveness of controls, using multiple accounts if possible
-- [ ] Test for insecure access control methods (request parameters, Referer header, etc)
+- [ ] Test effectiveness of controls, using multiple accounts if possible (see [./idor.md](./idor.md), [./http-verb-tampering.md](./http-verb-tampering.md))
+- [ ] Test for insecure access control methods (request parameters, `Referer` header, etc.)
 
 ## Test handling of input
-
 - [ ] Fuzz all request parameters
-- [ ] Test for SQL injection
+- [ ] Test for SQL injection (see [./sqli.md](./sqli.md))
 - [ ] Identify all reflected data
-- [ ] Test for reflected XSS
+- [ ] Test for reflected XSS (see [./xss.md](./xss.md))
 - [ ] Test for HTTP header injection
 - [ ] Test for arbitrary redirection
 - [ ] Test for stored attacks
 - [ ] Test for OS command injection
-- [ ] Test for path traversal
+- [ ] Test for path traversal (see [./lfi-rfi.md](./lfi-rfi.md))
 - [ ] Test for script injection
-- [ ] Test for file inclusion
+- [ ] Test for file inclusion (see [./lfi-rfi.md](./lfi-rfi.md))
 - [ ] Test for SMTP injection
 - [ ] Test for native software flaws (buffer overflow, integer bugs, format strings)
 - [ ] Test for SOAP injection
 - [ ] Test for LDAP injection
 - [ ] Test for XPath injection
-- [ ] Test for SSRF and HTTP Redirrects in all redirecting parameters
+- [ ] Test for SSRF and HTTP redirects in all redirecting parameters
 
 ## Test application logic
-
 - [ ] Identify the logic attack surface
 - [ ] Test transmission of data via the client
 - [ ] Test for reliance on client-side input validation
@@ -81,19 +81,17 @@
 - [ ] Test transaction logic
 
 ## Assess application hosting
-
 - [ ] Test segregation in shared infrastructures
 - [ ] Test segregation between ASP-hosted applications
 - [ ] Test for web server vulnerabilities
 - [ ] Default credentials
 - [ ] Default content
-- [ ] Dangerous HTTP methods
+- [ ] Dangerous HTTP methods (see [./http-verb-tampering.md](./http-verb-tampering.md))
 - [ ] Proxy functionality
 - [ ] Virtual hosting mis-configuration
-- [ ] Bugs in web server software
+- [ ] Bugs in web server software (see [../cheatsheets/nginx.md](../cheatsheets/nginx.md))
 
 ## Miscellaneous tests
-
 - [ ] Check for DOM-based attacks
 - [ ] Check for frame injection
 - [ ] Check for local privacy vulnerabilities
@@ -103,3 +101,21 @@
 - [ ] Forms with autocomplete enabled
 - [ ] Follow up any information leakage
 - [ ] Check for weak SSL ciphers
+
+## Defence / Remediation
+This file is an offensive methodology checklist; per-class controls live alongside each vulnerability:
+- Auth / brute force → [../cheatsheets/hydra.md → Defence](../cheatsheets/hydra.md#defence--remediation)
+- SQL injection → [./sqli.md → Defence](./sqli.md#defence--remediation)
+- XSS → [./xss.md → Defence](./xss.md#defence--remediation)
+- LFI / RFI → [./lfi-rfi.md → Defence](./lfi-rfi.md#defence--remediation)
+- XXE → [./xxe.md → Defence](./xxe.md#defence--remediation)
+- Access control / IDOR → [./idor.md → Defence](./idor.md#defence--remediation)
+- HTTP method tampering → [./http-verb-tampering.md → Defence](./http-verb-tampering.md#defence--remediation)
+- Web-server config → [../cheatsheets/nginx.md → Defence](../cheatsheets/nginx.md#defence--remediation)
+- Engagement-level baseline: OWASP ASVS controls per category, then verify on each finding.
+
+## Sources
+- OWASP Web Security Testing Guide (WSTG) v4.2: https://owasp.org/www-project-web-security-testing-guide/v42/
+- OWASP Application Security Verification Standard (ASVS): https://owasp.org/www-project-application-security-verification-standard/
+- OWASP Top 10 (2021): https://owasp.org/Top10/
+- Assetnote wordlists: https://wordlists.assetnote.io/

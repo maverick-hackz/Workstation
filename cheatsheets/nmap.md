@@ -1,57 +1,73 @@
-## Scanning Options
+# Nmap
 
-| **Nmap Option** | **Description** |
-|---|----|
+> Network scanner — host discovery, port scanning, version & OS detection, NSE scripts. Authorized engagements only; sweep scans are loud and rate-shaping/IDS will trip on them.
+
+## TL;DR
+- Default scan is `-sS` (root) or `-sT` (unprivileged) over the top-1000 TCP ports — explicitly choose `-p-` when full coverage matters.
+- Discovery is silent by default; `-Pn` skips host-up probing when ICMP is filtered.
+- `-sV -sC -O` is the standard "info pass" but is also the noisiest; spread with `-T2` on production.
+- Stream `-oA basename` to keep `nmap`, `gnmap`, and XML outputs in sync for downstream tooling.
+
+## Detection / Discovery
+| Option | Description |
+| --- | --- |
 | `10.10.10.0/24` | Target network range. |
-| `-sn` | Disables port scanning. |
-| `-Pn` | Disables ICMP Echo Requests |
-| `-n` | Disables DNS Resolution. |
-| `-PE` | Performs the ping scan by using ICMP Echo Requests against the target. |
-| `--packet-trace` | Shows all packets sent and received. |
-| `--reason` | Displays the reason for a specific result. |
-| `--disable-arp-ping` | Disables ARP Ping Requests. |
-| `--top-ports=<num>` | Scans the specified top ports that have been defined as most frequent.  |
-| `-p-` | Scan all ports. |
-| `-p22-110` | Scan all ports between 22 and 110. |
-| `-p22,25` | Scans only the specified ports 22 and 25. |
-| `-F` | Scans top 100 ports. |
-| `-sS` | Performs an TCP SYN-Scan. |
-| `-sA` | Performs an TCP ACK-Scan. |
-| `-sU` | Performs an UDP Scan. |
-| `-sV` | Scans the discovered services for their versions. |
-| `-sC` | Perform a Script Scan with scripts that are categorized as "default". |
-| `--script <script>` | Performs a Script Scan by using the specified scripts. |
-| `-O` | Performs an OS Detection Scan to determine the OS of the target. |
-| `-A` | Performs OS Detection, Service Detection, and traceroute scans. |
-| `-D RND:5` | Sets the number of random Decoys that will be used to scan the target. |
-| `-e` | Specifies the network interface that is used for the scan. |
-| `-S 10.10.10.200` | Specifies the source IP address for the scan. |
-| `-g` | Specifies the source port for the scan. |
-| `--dns-server <ns>` | DNS resolution is performed by using a specified name server. |
+| `-sn` | Disable port scanning (host discovery only). |
+| `-Pn` | Skip host discovery (treat all as up). |
+| `-n` | Skip DNS resolution. |
+| `-PE` | ICMP Echo ping scan. |
+| `--packet-trace` | Show all packets sent and received. |
+| `--reason` | Display reason for each result. |
+| `--disable-arp-ping` | Disable ARP ping (LAN scans). |
+| `--top-ports=<num>` | Scan the N most-frequent ports. |
+| `-p-` | Scan all 65 535 ports. |
+| `-p22-110` | Scan range 22-110. |
+| `-p22,25` | Scan specific ports. |
+| `-F` | Fast scan, top 100 ports. |
 
-
-
+## Exploitation (scan techniques)
+| Option | Description |
+| --- | --- |
+| `-sS` | TCP SYN scan. |
+| `-sA` | TCP ACK scan (firewall mapping). |
+| `-sU` | UDP scan. |
+| `-sV` | Service / version detection. |
+| `-sC` | Default NSE script category. |
+| `--script <script>` | Run specific NSE script(s). |
+| `-O` | OS detection. |
+| `-A` | OS detection + version + script + traceroute. |
+| `-D RND:5` | Random decoys. |
+| `-e <iface>` | Network interface. |
+| `-S 10.10.10.200` | Spoof source IP. |
+| `-g <port>` | Source port. |
+| `--dns-server <ns>` | Use specific DNS server. |
 
 ## Output Options
-
-
-| **Nmap Option** | **Description** |
-|---|----|
-| `-oA filename` | Stores the results in all available formats starting with the name of "filename". |
-| `-oN filename` | Stores the results in normal format with the name "filename". |
-| `-oG filename` | Stores the results in "grepable" format with the name of "filename". |
-| `-oX filename` | Stores the results in XML format with the name of "filename". |
-
-
+| Option | Description |
+| --- | --- |
+| `-oA filename` | Store results in all formats. |
+| `-oN filename` | Normal text. |
+| `-oG filename` | Grepable. |
+| `-oX filename` | XML. |
 
 ## Performance Options
+| Option | Description |
+| --- | --- |
+| `--max-retries <num>` | Retries per port. |
+| `--stats-every=5s` | Periodic status output. |
+| `-v` / `-vv` | Verbose output. |
+| `--initial-rtt-timeout 50ms` | Initial RTT timeout. |
+| `--max-rtt-timeout 100ms` | Maximum RTT timeout. |
+| `--min-rate 300` | Minimum packets/s. |
+| `-T <0-5>` | Timing template (5 = insane, 2 = polite). |
 
-| **Nmap Option** | **Description** |
-|---|----|
-| `--max-retries <num>` | Sets the number of retries for scans of specific ports. |
-| `--stats-every=5s` | Displays scan's status every 5 seconds. |
-| `-v/-vv` | Displays verbose output during the scan. |
-| `--initial-rtt-timeout 50ms` | Sets the specified time value as initial RTT timeout. |
-| `--max-rtt-timeout 100ms` | Sets the specified time value as maximum RTT timeout. |
-| `--min-rate 300` | Sets the number of packets that will be sent simultaneously. |
-| `-T <0-5>` | Specifies the specific timing template. |
+## Defence / Remediation
+- Network-level: segment, drop ICMP echo + TCP/UDP probes at the edge for unmanaged source IPs (CWE-200 Information Exposure).
+- IDS/IPS rules (Suricata/Zeek) for SYN-flood, port-sweep, and NSE-script signatures; alert on `-sV` user-agents and known NSE banner strings.
+- Don't expose internal management interfaces (SSH, RDP, IPMI, K8s API) to the internet — VPN/zero-trust gateway only.
+- Treat anti-scan posture as a delay/detection tool, not a prevention; defenders must assume scans will succeed.
+
+## Sources
+- Nmap reference guide: https://nmap.org/book/man.html
+- NSE script database: https://nmap.org/nsedoc/
+- MITRE ATT&CK T1046 Network Service Discovery: https://attack.mitre.org/techniques/T1046/

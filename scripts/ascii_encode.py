@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Hex encoder: emit a string as a sequence of \\xHH bytes.
+"""ASCII encoder: print comma-separated decimal codepoints for input strings.
 
 Usage:
-    python3 hex_encode.py                 # interactive (type 'exit' to quit)
-    python3 hex_encode.py "hello world"   # one-shot, encode the argument
+    python3 ascii_encode.py                 # interactive (type 'exit' to quit)
+    python3 ascii_encode.py "hello world"   # one-shot, encode the argument
 
 Authorized testing only.
 """
@@ -12,7 +12,7 @@ import sys
 
 
 def encode(s: str) -> str:
-    return "".join("\\x" + format(ord(c), "02x") for c in s)
+    return ",".join(str(ord(c)) for c in s)
 
 
 def main() -> int:
@@ -26,10 +26,10 @@ def main() -> int:
 
     try:
         while True:
-            s = input("Enter text: ")
+            s = input()
             if s.lower() == "exit":
                 return 0
-            print("HEX\t==>\t" + encode(s))
+            print(encode(s))
     except (EOFError, KeyboardInterrupt):
         return 0
 

