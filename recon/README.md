@@ -6,11 +6,9 @@ Information gathering before exploitation: certificate-transparency, OSINT, infr
 
 | File | WSTG | MITRE ATT&CK |
 | --- | --- | --- |
+| [osint.md](./osint.md) | [WSTG-INFO-01..10](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/) | [TA0043 Reconnaissance](https://attack.mitre.org/tactics/TA0043/) |
 | [service-enum.md](./service-enum.md) | [WSTG-INFO-02](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server) | [T1046 Network Service Discovery](https://attack.mitre.org/techniques/T1046/) |
-
-## Planned (Phase 6)
-- `osint.md` — passive collection (Shodan, crt.sh, GitHub dorking, BGP/ASN, breach corpora).
-- `subdomain-enum.md` — active + passive subdomain discovery.
+| [subdomain-enum.md](./subdomain-enum.md) | [WSTG-INFO-04](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver) | [T1590.005 IP Addresses](https://attack.mitre.org/techniques/T1590/005/), [T1596.001 DNS/Passive DNS](https://attack.mitre.org/techniques/T1596/001/) |
 
 ## Sources
 - OWASP WSTG — Information Gathering: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/

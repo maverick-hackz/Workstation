@@ -74,4 +74,8 @@ See [../cheatsheets/chisel.md](../cheatsheets/chisel.md) for a full reference.
 ./pspy64 -pf -i 1000
 ```
 
+## Windows helpers
+
+Windows-side helper binaries (winPEAS, Seatbelt, Rubeus, SharpHound, mimikatz, nc.exe, etc.) are documented in [./windows/README.md](./windows/README.md) but **not bundled** in this repo — AV/EDR triggers on extraction and GitHub flag-as-malware risk make in-repo distribution impractical. The README documents upstream URLs and an operator workflow for fetching them per engagement.
+
 ## Authorized testing only.

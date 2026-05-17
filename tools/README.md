@@ -26,7 +26,7 @@ Bundled third-party tools. Sources kept in-repo for offline use. For latest vers
 
 > Note on `tools/reverse/uncompyle6`: this is a thin 231-byte entry-point script that imports `uncompyle6.bin.uncompile`. It is **not** the full package — install via `pip install uncompyle6` (Python ≤ 3.8) or `pip install decompyle3` (3.7-3.9 fork) to actually use it. See upstream for current Python version support.
 
-> Note on `tools/reverse/pyinstxtractor/qreader.exe`: this 87 MB Windows PyInstaller binary is the upstream's example target (input for the extractor). Kept bundled per repo policy (additive-only changes to `tools/`). If you do not need an offline target sample, you can delete it locally without breaking the script: `rm tools/reverse/pyinstxtractor/qreader.exe`.
+> Note on `tools/reverse/pyinstxtractor/`: the upstream example target (`qreader.exe`, 87 MB Windows PyInstaller binary) was removed in Phase 9a to keep the repo lean. If you want an offline target sample for `pyinstxtractor.py`, fetch from upstream — https://github.com/pyinstxtractor/pyinstxtractor-test-binaries — or build your own with `pyinstaller --onefile`. History still carries the binary; a future `git filter-repo` pass can scrub it from `.git` pack if needed.
 
 ## Refreshing a bundled tool
 
