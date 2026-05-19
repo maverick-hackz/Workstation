@@ -100,7 +100,7 @@ On a compromised pod with workload-identity bound to a privileged Kubernetes SA 
 - GCP Security Best Practices: https://cloud.google.com/security/best-practices
 - GCP IAM Roles reference: https://cloud.google.com/iam/docs/understanding-roles
 - GCP Metadata server documentation: https://cloud.google.com/compute/docs/metadata/default-metadata-values
-- hackingthe.cloud — GCP: https://hackingthe.cloud/gcp/
+- hackingthe.cloud — GCP: https://hackingthe.cloud/
 - HackTricks GCP pentesting: https://book.hacktricks.wiki/en/pentesting-cloud/gcp-security/index.html
 - gcp_scanner: https://github.com/google/gcp_scanner
 - MITRE ATT&CK for Cloud: https://attack.mitre.org/matrices/enterprise/cloud/

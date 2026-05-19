@@ -102,7 +102,7 @@ The codecov bash uploader was modified upstream to exfil environment variables; 
 - **CI secret scanning** — alert when a secret hits a build log; rotate immediately.
 
 ## Sources
-- OWASP Top 10 CI/CD Security Risks — CI/CD-SEC-04 Poisoned Pipeline Execution: https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution-(PPE).html
+- OWASP Top 10 CI/CD Security Risks — CI/CD-SEC-04 Poisoned Pipeline Execution: https://github.com/cider-security-research/top-10-cicd-security-risks/blob/main/Risks/CICD-SEC-04-Poisoned-Pipeline-Execution.md
 - Cider Security (now Palo Alto) PPE research: https://www.paloaltonetworks.com/blog/prisma-cloud/poisoned-pipeline-execution/
 - Codecov bash uploader compromise post-mortem: https://about.codecov.io/security-update/
 - GitHub Security Lab — pwn-request: https://securitylab.github.com/research/github-actions-preventing-pwn-requests/

@@ -42,4 +42,4 @@ curl -i -X TRACE  https://target/admin
 - OWASP WSTG-CONF-06 Test HTTP Methods: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods
 - OWASP WSTG-ATHZ-01 Test Directory Traversal File Include: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include
 - CWE-650 Trusting HTTP Permission Methods on the Server Side: https://cwe.mitre.org/data/definitions/650.html
-- PayloadsAllTheThings Insecure Methods: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Insecure%20Direct%20Object%20References.md
+- PayloadsAllTheThings Insecure Methods: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Direct%20Object%20References

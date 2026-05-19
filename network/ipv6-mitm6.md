@@ -84,11 +84,11 @@ A simpler attack — just send RAs with attacker's MAC as the router. Some hosts
 - **Disable NetBIOS over TCP/IP + LLMNR + mDNS** on endpoints (see [./llmnr-nbtns-responder.md](./llmnr-nbtns-responder.md)) so attacker has fewer name-resolution oracles to abuse.
 
 ## Sources
-- mitm6 + accompanying write-up (Dirk-jan Mollema, Fox-IT 2018): https://github.com/dirkjanm/mitm6 and https://dirkjanm.io/exploiting-default-active-directory-installations/
+- mitm6 + accompanying write-up (Dirk-jan Mollema, Fox-IT 2018): https://github.com/dirkjanm/mitm6 and https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work/
 - Impacket ntlmrelayx: https://github.com/fortra/impacket
-- Microsoft — IPv6 Configuration Guidance (DisabledComponents): https://support.microsoft.com/en-us/topic/guidance-for-configuring-ipv6-in-windows-for-advanced-users-0f784dd6-9f99-d34d-90f8-d70e2eaee0c4
+- Microsoft — IPv6 Configuration Guidance (DisabledComponents): registry key `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\DisabledComponents` (see Microsoft Learn for current article)
 - Microsoft — Manage LDAP Signing: https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-signing-in-windows-server
 - Microsoft — LDAP Channel Binding: https://msrc.microsoft.com/update-guide/vulnerability/ADV190023
-- Cisco — IPv6 First Hop Security (RA Guard, DHCPv6 Guard): https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6_fhsec/configuration/15-2mt/ip6f-15-2mt-book.html
+- Cisco — IPv6 First Hop Security (RA Guard, DHCPv6 Guard): https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6_fhsec/configuration/15-sy/ip6f-15-sy-book.html
 - HackTricks mitm6: https://book.hacktricks.wiki/en/network-services-pentesting/spoofing-llmnr-nbtns-mdns-dns-and-wpad-and-relay-attacks.html
 - MITRE ATT&CK T1557.001 LLMNR / NBT-NS / mitm6 — Adversary-in-the-Middle: https://attack.mitre.org/techniques/T1557/001/

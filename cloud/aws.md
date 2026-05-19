@@ -102,9 +102,9 @@ This will be detected by GuardDuty (`Stealth:IAMUser/CloudTrailLoggingDisabled`)
 ## Sources
 - AWS Security Documentation: https://docs.aws.amazon.com/security/
 - AWS IMDSv2 reference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html
-- hackingthe.cloud — AWS: https://hackingthe.cloud/aws/general-knowledge/introduction/
+- hackingthe.cloud — AWS: https://hackingthe.cloud/
 - pacu: https://github.com/RhinoSecurityLabs/pacu
 - enumerate-iam: https://github.com/andresriancho/enumerate-iam
 - Rhino — 21 AWS Privesc Methods: https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigations/
 - MITRE ATT&CK for Cloud (IaaS): https://attack.mitre.org/matrices/enterprise/cloud/iaas/
-- PayloadsAllTheThings AWS: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources/Cloud%20-%20AWS%20Pentest
+- PayloadsAllTheThings AWS: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20AWS%20Pentest.md

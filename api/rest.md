@@ -87,5 +87,5 @@ DTD primer (preserved from source): a DTD defines the structure and legal elemen
 - OWASP API Security Top 10 (2023): https://owasp.org/API-Security/editions/2023/en/0x00-header/
 - OWASP API Security Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
 - HackTricks API pentest: https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-web/rest-api-pentesting.html
-- PayloadsAllTheThings API: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API
+- PayloadsAllTheThings API: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks
 - SecLists API endpoint wordlists: https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content

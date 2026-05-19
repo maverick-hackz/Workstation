@@ -117,7 +117,7 @@ Maps URLs to controllers; speeds up subsequent fuzzing.
 - Spring Boot Actuator docs: https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
 - Spring Security advisories: https://spring.io/security
 - HackTricks Spring Boot Actuators: https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-web/spring-actuators.html
-- PortSwigger — Spring Boot Actuator: https://portswigger.net/research/spring-cloud-vulnerabilities (Spring Cloud Gateway / Function research)
+- PortSwigger — Spring Boot Actuator: https://portswigger.net/daily-swig/spring-cloud-function-vulnerability (Spring Cloud Gateway / Function research)
 - CVE-2022-22947 (Spring Cloud Gateway code injection): https://tanzu.vmware.com/security/cve-2022-22947
 - CVE-2022-22965 (Spring4Shell): https://tanzu.vmware.com/security/cve-2022-22965
 - nuclei spring-actuator templates: https://github.com/projectdiscovery/nuclei-templates/tree/main/http/exposed-panels (search springboot)

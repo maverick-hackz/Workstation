@@ -156,7 +156,7 @@ curl -s https://target/wp-json/<plugin-route>/ | jq
 - WPScan vulnerability DB: https://wpscan.com/plugins
 - Patchstack DB: https://patchstack.com/database/
 - HackTricks WordPress: https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-web/wordpress.html
-- OWASP WordPress Security: https://owasp.org/www-project-wordpress-security-implementation-guideline/
+- OWASP WordPress Security: https://wordpress.org/documentation/article/hardening-wordpress/
 - WP-CLI (operations toolkit): https://wp-cli.org/
 - Wordfence research: https://www.wordfence.com/blog/category/wordpress-security/
 - Sucuri research: https://blog.sucuri.net/

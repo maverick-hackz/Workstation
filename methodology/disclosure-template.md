@@ -121,5 +121,5 @@ Regards,
 - Google Project Zero — Vulnerability disclosure policy: https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-faq.html
 - CISA Coordinated Vulnerability Disclosure Process: https://www.cisa.gov/coordinated-vulnerability-disclosure-process
 - disclose.io — Vulnerability disclosure project: https://disclose.io/
-- HackerOne — Disclosure guidelines: https://docs.hackerone.com/en/articles/8473145-disclosure
+- HackerOne — Coordinated Vulnerability Disclosure: https://docs.hackerone.com/en/articles/9829406-coordinated-vulnerability-disclosure
 - Bugcrowd — VRT (Vulnerability Rating Taxonomy): https://bugcrowd.com/vulnerability-rating-taxonomy

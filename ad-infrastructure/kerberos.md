@@ -138,8 +138,8 @@ Quieter than Golden because no TGS-REQ to DC for that service.
 - **Microsoft Defender for Identity / Falcon Identity Protection** — high-fidelity alerts for golden ticket, DCSync, encryption downgrade, anomalous Kerberos behaviour.
 
 ## Sources
-- harmj0y — Roasting AS-REPs: https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/
-- harmj0y — A Guide to Attacking Domain Trusts: https://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/
+- harmj0y — Roasting AS-REPs: https://blog.harmj0y.net/activedirectory/roasting-as-reps/
+- harmj0y — A Guide to Attacking Domain Trusts: https://blog.harmj0y.net/redteaming/a-guide-to-attacking-domain-trusts/
 - ired.team — Kerberos delegation: https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse
 - SpecterOps — Wagging the Dog (RBCD): https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html
 - HackTricks Kerberos abuse: https://book.hacktricks.wiki/en/windows-hardening/active-directory-methodology/kerberos-double-hop-problem.html

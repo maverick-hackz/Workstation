@@ -65,6 +65,6 @@ Rare in modern apps but documented in HTML spec.
 - HTML Living Standard — Named characteristics on `document`: https://html.spec.whatwg.org/multipage/dom.html#named-access-on-document
 - Gareth Heyes / PortSwigger — DOM Clobbering: https://portswigger.net/web-security/dom-based/dom-clobbering
 - DOMPurify: https://github.com/cure53/DOMPurify
-- TheKeyMakers DOM Clobbering wiki: https://github.com/wisec/domclob
-- "DOM Clobbering strikes back" (USENIX Sec 2023): https://www.usenix.org/system/files/usenixsecurity23-khodayari.pdf
+- DOM Clobbering Wiki (Khodayari): https://domclob.xyz/domc_wiki/
+- "It's (DOM) Clobbering Time" (S&P 2023, Khodayari et al.): https://trouge.net/papers/domclob_sp23.pdf
 - CWE-1321 (closely related): https://cwe.mitre.org/data/definitions/1321.html

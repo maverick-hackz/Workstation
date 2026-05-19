@@ -1,6 +1,6 @@
 # CORS Misconfiguration
 
-> Cross-Origin Resource Sharing rules that let any origin read sensitive cross-credentialed responses. Authorized testing only. Map: CWE-942, OWASP WSTG-CONF-07.
+> Cross-Origin Resource Sharing rules that let any origin read sensitive cross-credentialed responses. Authorized testing only. Map: CWE-942, OWASP WSTG-CLNT-07.
 
 ## TL;DR
 - Browser policy: same-origin reads by default. CORS opt-out is the server saying "this origin may read my response".
@@ -80,7 +80,7 @@ Allow-list includes `*.target.tld`. Attacker finds XSS or open-redirect on any s
 
 ## Sources
 - MDN — CORS: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-- OWASP WSTG-CONF-07 CORS: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_Cross_Origin_Resource_Sharing
+- OWASP WSTG-CLNT-07 CORS: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/07-Testing_Cross_Origin_Resource_Sharing
 - OWASP Cheat Sheet — HTML5 Security: https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html
 - PortSwigger CORS: https://portswigger.net/web-security/cors
 - PayloadsAllTheThings CORS Misconfiguration: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CORS%20Misconfiguration

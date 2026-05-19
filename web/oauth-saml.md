@@ -98,7 +98,7 @@ SP misconfigured to not require signature → attacker forges responses entirely
 - PortSwigger — OAuth: https://portswigger.net/web-security/oauth
 - PortSwigger — OpenID: https://portswigger.net/web-security/oauth/openid
 - OWASP Cheat Sheet — SAML Security: https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html
-- OWASP Cheat Sheet — OAuth 2.0: https://cheatsheetseries.owasp.org/cheatsheets/OAuth_Security_Cheat_Sheet.html
+- OWASP Cheat Sheet — OAuth 2.0: https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html
 - SAML Raider (Burp extension): https://github.com/PortSwigger/saml-raider
 - PayloadsAllTheThings OAuth Misconfiguration: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/OAuth%20Misconfiguration
 - Duo Labs — XML Signature Wrapping (XSW) reference: https://duo.com/labs/research

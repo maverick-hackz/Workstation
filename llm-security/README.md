@@ -6,7 +6,7 @@ LLM / GenAI application security cheatsheets. Map: OWASP Top 10 for LLM Applicat
 
 | File | OWASP LLM Top 10 (2025) | MITRE ATLAS |
 | --- | --- | --- |
-| [prompt-injection.md](./prompt-injection.md) | LLM01 | [AML.T0051 LLM Prompt Injection](https://atlas.mitre.org/techniques/AML.T0051/) |
+| [prompt-injection.md](./prompt-injection.md) | LLM01 AML.T0051 LLM Prompt Injection |
 | [owasp-llm-top10.md](./owasp-llm-top10.md) | All ten | https://atlas.mitre.org/ |
 
 ## Sources

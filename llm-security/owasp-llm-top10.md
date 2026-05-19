@@ -83,4 +83,4 @@
 - NIST AI Risk Management Framework (AI RMF 1.0): https://www.nist.gov/itl/ai-risk-management-framework
 - NIST AI 100-2 Adversarial Machine Learning Taxonomy: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
 - MITRE ATLAS: https://atlas.mitre.org/
-- OWASP LLM AI Security & Governance Checklist: https://owasp.org/www-project-llm-ai-security-and-governance-checklist/
+- OWASP LLM AI Security & Governance Checklist: https://owasp.org/www-project-top-10-for-large-language-model-applications/

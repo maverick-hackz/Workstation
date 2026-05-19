@@ -78,4 +78,4 @@
 - OWASP Application Security Verification Standard (ASVS): https://owasp.org/www-project-application-security-verification-standard/
 - OWASP Automated Threats (OAT): https://owasp.org/www-project-automated-threats-to-web-applications/
 - HackTricks API pentest: https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-web/rest-api-pentesting.html
-- PayloadsAllTheThings API: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API
+- PayloadsAllTheThings API: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks

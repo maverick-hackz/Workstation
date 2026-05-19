@@ -80,7 +80,7 @@ Same effect — `obj.constructor.prototype === Object.prototype`.
 ## Sources
 - PortSwigger — Prototype pollution: https://portswigger.net/web-security/prototype-pollution
 - Olivier Arteau — Prototype pollution attack (NorthSec 2018): https://github.com/HoLyVieR/prototype-pollution-nsec18
-- Snyk — Prototype pollution research: https://snyk.io/blog/preventing-prototype-pollution-in-javascript/
+- Snyk — Prototype pollution research: https://learn.snyk.io/lesson/prototype-pollution/
 - PayloadsAllTheThings — Prototype Pollution: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Prototype%20Pollution
 - HackTricks Prototype Pollution: https://book.hacktricks.wiki/en/pentesting-web/deserialization/nodejs-proto-prototype-pollution/index.html
 - Burp Server-Side Prototype Pollution Scanner: https://portswigger.net/bappstore/c1d4bd60626d4178a54d36ee802cf7e8

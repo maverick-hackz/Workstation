@@ -110,7 +110,7 @@ User-supplied CSV with `=cmd|'/c calc'!A1` → Excel/LibreOffice executes on ope
 - **Antivirus scan** as a backstop (ClamAV); not a primary defence.
 
 ## Sources
-- OWASP WSTG-BUSL-09 Test Upload of Unexpected File Types: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Unexpected_File_Types
+- OWASP WSTG-BUSL-08 Test Upload of Unexpected File Types: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/10-Business_Logic_Testing/08-Test_Upload_of_Unexpected_File_Types
 - OWASP Cheat Sheet — File Upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
 - PortSwigger — File upload vulnerabilities: https://portswigger.net/web-security/file-upload
 - PayloadsAllTheThings Upload Insecure Files: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Upload%20Insecure%20Files

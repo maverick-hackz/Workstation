@@ -87,7 +87,7 @@ Force victim to log in as attacker → attacker reads victim's subsequent activi
 - OWASP WSTG-SESS-05 Testing for CSRF: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
 - OWASP Cheat Sheet — Cross-Site Request Forgery Prevention: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 - PortSwigger — CSRF: https://portswigger.net/web-security/csrf
-- PayloadsAllTheThings CSRF Injection: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CSRF%20Injection
+- PayloadsAllTheThings CSRF Injection: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Cross-Site%20Request%20Forgery
 - MDN — SameSite cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
 - HackTricks CSRF: https://book.hacktricks.wiki/en/pentesting-web/csrf-cross-site-request-forgery.html
 - CWE-352 Cross-Site Request Forgery: https://cwe.mitre.org/data/definitions/352.html

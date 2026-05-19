@@ -63,7 +63,7 @@ Key Info.plist keys to flag:
 - **Disable `UIPasteboard` sharing** for sensitive screens with `UITextField.isSecureTextEntry = true`; iOS 14+ shows the pasteboard-read prompt automatically.
 
 ## Sources
-- OWASP MASTG (iOS chapter): https://mas.owasp.org/MASTG/0x06-iOS-Testing-Guide/
+- OWASP MASTG (iOS chapter): https://mas.owasp.org/MASTG/tests/
 - OWASP MASVS: https://mas.owasp.org/MASVS/
 - HackTricks iOS pentesting: https://book.hacktricks.wiki/en/mobile-pentesting/ios-pentesting/index.html
 - Apple Platform Security guide: https://support.apple.com/guide/security/welcome/web

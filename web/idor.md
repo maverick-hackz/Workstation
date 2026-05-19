@@ -54,5 +54,5 @@ curl https://target/file?ref=$(echo -n user_2 | md5sum | cut -d' ' -f1)
 - OWASP WSTG-ATHZ-04 Test Insecure Direct Object References: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
 - OWASP API Security — API1:2023 Broken Object Level Authorization: https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/
 - PortSwigger Access Control: https://portswigger.net/web-security/access-control
-- PayloadsAllTheThings Insecure Direct Object References: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Insecure%20Direct%20Object%20References.md
+- PayloadsAllTheThings Insecure Direct Object References: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Direct%20Object%20References
 - CWE-639 Authorization Bypass Through User-Controlled Key: https://cwe.mitre.org/data/definitions/639.html

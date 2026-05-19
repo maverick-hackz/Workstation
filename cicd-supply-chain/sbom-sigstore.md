@@ -98,6 +98,6 @@ Every cosign signature is published to a Merkle-tree append-only log (`rekor.sig
 - Fulcio: https://github.com/sigstore/fulcio
 - Rekor: https://github.com/sigstore/rekor
 - SLSA framework: https://slsa.dev/
-- US Executive Order 14028 — Software Supply Chain: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
+- US Executive Order 14028 — Software Supply Chain: https://web.archive.org/web/2024/https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
 - EU Cyber Resilience Act overview: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
 - NIST SSDF (SP 800-218): https://csrc.nist.gov/publications/detail/sp/800-218/final

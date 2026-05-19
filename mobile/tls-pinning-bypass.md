@@ -95,7 +95,7 @@ Standard Frida hooks cover the JS-bridge layer's `fetch` / XHR; native pinning l
 - **Network logging**: backend should alert on the same auth token presenting from heterogeneous user-agents or impossible geographies — pinning bypass is silent on the device, noisy on the backend.
 
 ## Sources
-- OWASP MASTG — Network Communication (MSTG-NETWORK): https://mas.owasp.org/MASTG/0x04g-Testing-Network-Communication/
+- OWASP MASTG — Network Communication (MSTG-NETWORK): https://mas.owasp.org/MASTG/tests/ios/MASVS-NETWORK/MASTG-TEST-0067/
 - objection wiki — SSL pinning bypass: https://github.com/sensepost/objection/wiki
 - Frida CodeShare (community scripts): https://codeshare.frida.re/
 - HackTricks Android SSL pinning bypass: https://book.hacktricks.wiki/en/mobile-pentesting/android-app-pentesting/avd-android-virtual-device.html

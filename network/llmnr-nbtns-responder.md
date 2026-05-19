@@ -89,6 +89,7 @@ Same idea, port 5353 (`_workstation._tcp.local`, `_smb._tcp.local`). Responder `
 - Coercer (multiple coercion methods in one tool): https://github.com/p0dalirius/Coercer
 - PetitPotam: https://github.com/topotam/PetitPotam
 - DFSCoerce: https://github.com/Wh04m1001/DFSCoerce
-- Microsoft — How to disable LLMNR: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/dns-client-resolve-name-when-llmnr-is-enabled
+- Black Hills Information Security — How To Disable LLMNR & Why You Want To: https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
+- Microsoft — Disable LLMNR via Group Policy: Computer Configuration → Administrative Templates → Network → DNS Client → "Turn off Multicast Name Resolution" (Enabled)
 - HackTricks Responder: https://book.hacktricks.wiki/en/network-services-pentesting/spoofing-llmnr-nbtns-mdns-dns-and-wpad-and-relay-attacks.html
 - MITRE ATT&CK T1557.001 LLMNR/NBT-NS Poisoning and SMB Relay: https://attack.mitre.org/techniques/T1557/001/

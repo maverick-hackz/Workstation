@@ -34,7 +34,7 @@
 | https://github.com/frohoff/ysoserial | Java |
 | https://github.com/pwntester/ysoserial.net | .NET |
 | https://github.com/ambionics/phpggc | PHP |
-| https://github.com/ConstellationPwn/Yet-Another-Pickle-Exploit | Python (illustrative; pickle is simple enough to hand-craft) |
+| https://github.com/CalfCrusher/Python-Pickle-RCE-Exploit | Python (pickle PoC) |
 
 ## Exploitation
 

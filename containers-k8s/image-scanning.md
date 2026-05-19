@@ -122,4 +122,4 @@ Trivy can also feed an admission decision via the `trivy-operator` (continuous i
 - OPA Gatekeeper: https://open-policy-agent.github.io/gatekeeper/
 - CISA — Securing the Software Supply Chain: https://www.cisa.gov/sites/default/files/2023-04/secure-by-design.pdf
 - EU Cyber Resilience Act (CRA) overview: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
-- US Executive Order 14028 — Software Supply Chain: https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
+- US Executive Order 14028 — Software Supply Chain: https://web.archive.org/web/2024/https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/
