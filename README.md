@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/4lsQrI7.png" >
+  <img src="https://imgbox.com/sx8alj2A" >
 </div>
 
 # Workstation
