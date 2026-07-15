@@ -4,7 +4,7 @@
 
 # Workstation
 
-Personal knowledge base and tooling for AppSec / pentest work — cheatsheets, payloads, scripts, and bundled third-party tools.
+Привет! У меня есть для тебя вакансия AppSec Engineer (AI & LLM Security). Если сейчас рассматриваешь предложения от компаний  — буду рада сообщению в тг @askarova_svetlana
 
 > ⚠️ **Authorized testing only.** Materials in this repository are intended for security testing on systems you own or have written authorization to test, education, AppSec research, and CTF competitions. See [DISCLAIMER.md](./DISCLAIMER.md).
 
